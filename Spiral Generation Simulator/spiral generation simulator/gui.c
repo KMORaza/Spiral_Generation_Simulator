@@ -616,9 +616,9 @@ void init_spiral_data(AppData *app_data) {
             break;
         }
         case BESSEL: {
-            double a = 0.5;  // Frequency of Bessel argument
-            theta_max = 20 * M_PI;  // Ten rotations
-            scale = 200.0;  // Scaling factor
+            double a = 0.5;  
+            theta_max = 20 * M_PI;  
+            scale = 200.0;  
             app_data->spiral_data.max_points = steps + 1;
             theta_step = theta_max / steps;
             for (int i = 0; i <= steps; i++) {
